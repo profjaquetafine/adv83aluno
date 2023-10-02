@@ -11,9 +11,9 @@ newWidth =  screen.width - 70;
 newHeight = screen.height - 300;
 	if(width < 992)
 	{
-	document.getElementById("myCanvas").width = newWidth;
-    document.getElementById("myCanvas").height = newHeight;
-    document.body.style.overflow = "hidden";
+//código aqui
+
+		
 	}
 	canvas.addEventListener("touchstart", myTouchStart);
 
@@ -25,8 +25,7 @@ function myTouchStart(e)
   widthOfLine = document.getElementById("widthOfLine").value;
   
 //Fim da Atividade Adicional
-    lastPositionOfX = e.touches[0].clientX - canvas.offsetLeft;
-    lastPositionOfY = e.touches[0].clientY - canvas.offsetTop;
+  //código aqui
 }
 
 canvas.addEventListener("touchmove", myTouchMove);
@@ -35,8 +34,7 @@ function myTouchMove(e)
 {
 
 	console.log("myTouchMove");
-    currentPositionOfTouchX = e.touches[0].clientX - canvas.offsetLeft;
-    currentPositionOfTouchY = e.touches[0].clientY - canvas.offsetTop;
+  //código aqui
 
     // mesmo código utilizado para a versão web
     ctx.beginPath();
